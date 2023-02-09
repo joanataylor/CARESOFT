@@ -1,8 +1,12 @@
 import java.util.ArrayList;
 import java.util.Date;
+// ... imports class definition...
 
 public class AdminUser extends User implements HIPAACompliantUser, HIPAACompliantAdmin {
-    // ... imports class definition...
+    // Inside class:
+    private Integer employeeID;
+    private String role;
+    private ArrayList<String> securityIncidents = new ArrayList<>();
 
     public AdminUser(Integer id, String role) {
         super(id);
@@ -10,10 +14,6 @@ public class AdminUser extends User implements HIPAACompliantUser, HIPAAComplian
         //TODO Auto-generated constructor stub
     }
 
-    // Inside class:
-    private Integer employeeID;
-    private String role;
-    private ArrayList<String> securityIncidents = new ArrayList<>();
 
     // TO DO: Implement a constructor that takes an ID and a role
 
